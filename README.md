@@ -121,9 +121,3 @@ W/S: forward/backward (vy) • A/D: left/right (vx) • Q/E: rotate ccw/cw (omeg
 
 - The EKF/SLAM is a compact didactic skeleton; for production, consider RTAB‑Map/ORB‑SLAM or lidar‑assisted stacks.  
 - If `RPi.GPIO` isn’t available (e.g., on a laptop), the motor layer falls back to a simulator that logs commands instead of touching GPIO.
-
----
-
-## License
-
-MIT
