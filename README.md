@@ -1,4 +1,6 @@
 # Auto Car
+![20250901_074346](https://github.com/user-attachments/assets/1cbd62ed-ba1c-4acd-b135-497d078e4e09)
+![20250901_074353](https://github.com/user-attachments/assets/ac30d261-5370-4517-beb0-3a8e206ba469)
 
 A dual-mode (tele‑op & autonomous) Raspberry Pi 4 robot car with live video streaming, a low‑latency remote controller, and a Flask dashboard for tuning, telemetry, and OTA updates.
 
