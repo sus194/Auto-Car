@@ -1,0 +1,22 @@
+# AutoCar Systemd Service Example
+# To install:
+# 1) Edit paths for your user.
+# 2) sudo cp autocar.service.example /etc/systemd/system/autocar.service
+# 3) sudo systemctl daemon-reload && sudo systemctl enable autocar.service && sudo systemctl start autocar.service
+
+[Unit]
+Description=AutoCar Control Service
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/autocar
+Environment=PYTHONPATH=/home/pi/autocar/src
+ExecStart=/home/pi/autocar/.venv/bin/python -m autocar.main --host 0.0.0.0 --port 80
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
